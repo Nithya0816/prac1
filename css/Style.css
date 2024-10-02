@@ -1,0 +1,396 @@
+body
+{
+margin: 0;
+font-family: centaur,serif;
+}
+.header
+{
+  display: flex; /*align items  horizondally*/
+  justify-content: space-between; /*space btwn log and menu*/
+  align-items: center; /* vertically center*/
+  background-color: white;
+  padding: 10px 20px;
+}
+.logo
+{
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none; /*removes underline*/
+}
+
+ul
+{
+  list-style-type: none; /*removes bullets*/
+  margin: 0;
+  padding: 0;
+  display: flex; /*align items  horizondally*/
+}
+
+ul li
+{
+  margin-left: 20px; /*space btwn each menu item*/
+  font-size: 22px; /*menu size*/
+ 
+}
+ul li a {
+  display: block;
+  color:black;
+  text-align: right;
+  padding: 10px 15px;
+  text-decoration: none;
+  
+}
+ul li a:hover
+{
+  color:royalblue; /*text color will change when the cursor is placed on the item*/
+  border-bottom: 3px solid black;
+}
+.booknowbtn
+{
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px; /*rounder border*/
+}
+.booknowbtn:hover
+{
+background-color: black;
+color: white;
+}
+.content-container /*container for content and image*/
+{
+ 
+  align-items: center;
+  padding:0%;
+
+}
+.content /*content on img*/
+{
+  
+  font-size: 30px;
+  align-items: center;
+  color:white;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%,-50%);
+  position:absolute;
+  
+}
+.enquirybtn
+{
+  background-color:black;
+  color: white;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 40px; /*rounder border*/
+  font-size:x-large;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 35%;
+}
+.enquirybtn:hover
+{
+background-color:orange;
+color: black;
+border: orange;
+}
+
+.fa-solid /*icon style*/
+{
+  font-size: 25px;
+  color: orange;
+}
+.headimg
+{
+  flex:1
+}
+.headimg img{
+  width:100%;
+  border-radius: 8px;
+}
+.aboutus
+{
+  text-align: center; 
+  margin-top: 30px;
+}
+.aboutus h2
+{
+  font-size:40px;
+}
+.box-container
+{
+  display: flex; /*align the boc horizondally*/
+  justify-content: space-around; /*add equal space between the boxes*/
+}
+.box
+{
+  background-color:black;
+  width: 25%;
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+
+
+}
+
+.box h3
+{
+margin-top: 30px;
+color: orange;
+font-size:40px;
+letter-spacing: 2px;
+}
+.box p{
+  color:white;
+  font-size:20px;
+  line-height: 1.6;
+}
+.food
+{
+  text-align: center; 
+margin-top: 8%;
+
+}
+.food h2
+{
+  font-size:40px;
+}
+.food-item-section
+{
+  display: flex; /*horizonadal display*/
+  flex-wrap:wrap; /* Allow wrapping to the next line */
+  justify-content: space-between; /* Evenly space the food items */
+  gap: 40px; /* Gap between items */
+  margin-top:8%;
+  
+
+}
+.food-item
+{
+width: 22%; 
+text-align:center;
+
+padding: 1px;
+
+}
+/* Food item image */
+.food-img {
+  width: 150px; /* Size of the image */
+height: 150px;
+object-fit: cover; /* Keep image aspect ratio */
+margin-bottom: 10px;
+}
+/* Food item name */
+.food-name {
+  font-weight: bold;
+  font-size:20px;
+  margin-bottom: 5px;
+}
+.food-price {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.original-price {
+  text-decoration: line-through; /* Strike-through for the original price */
+  color: red; /* Light grey for the original price */
+  margin-right: 10px;
+}
+/* Discounted price styling */
+.discounted-price {
+  color:green; /* Highlight the discounted price in red */
+  font-weight: bold;
+}
+.customer-reviews-section {
+  text-align: center; /* Center-align the text */
+  margin-top:40px; /* Margin for spacing around the section */
+ 
+}
+.customer-reviews-section h2 {
+  font-size:40px; /* Heading font size */
+  margin-bottom: 60px; /* Space below the heading */
+  color: black; /* Heading text color */
+  margin-top: 60px;
+}
+/* Container for each review */
+.review {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 60px; /* Space between reviews */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* Customer image styles */
+.customer-img {
+  width: 80px; /* Set width for the customer image */
+  height: 80px; /* Set height for the customer image */
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 20px; /* Space between image and text */
+}
+
+
+/* Review content styles */
+.review-content {
+  text-align: left; /* Align text to the left */
+}
+/* Review text styles */
+.review-text {
+  font-size: 1.1em; /* Font size for the review text */
+  color: #555; /* Text color for review */
+  margin-bottom: 5px; /* Space below the review text */
+}
+/* Rating styles */
+.rating {
+  font-size: 15px; /* Font size for the rating */
+  color: black; /* Color for stars */
+}
+/* Customer name styles */
+.customer-name {
+  font-size: 20px; /* Font size for customer name */
+  color: #777; /* Color for customer name */
+  margin-top: 5px; /* Space above the name */
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+    text-align: left;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  display:block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.form-container input, .form-container textarea {
+  width: 80%;
+ padding: 10px;
+ margin-bottom: 20px;
+ border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-container button {
+  display:block;
+  width: 20%;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: green;
+}
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark background color */
+  color:orange; /* White text */
+  padding: 40px 20px; /* Padding around the footer */
+  text-align: center; /* Align text to the left */
+}
+
+.footer-container {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between sections */
+  flex-wrap: wrap; /* Wrap the layout on smaller screens */
+}
+
+.footer-contact, .footer-social {
+  width: 45%; /* Width for each section */
+  margin-bottom: 20px; /* Space at the bottom */
+}
+
+.footer-contact h3, .footer-social h3 {
+  font-size: 1.5em; /* Font size for headings */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.footer-contact p {
+  margin-bottom: 10px; /* Space below contact details */
+  font-size: 1em; /* Font size for contact details */
+  color: white;
+}
+
+.footer-contact i {
+  margin-right: 10px; /* Space between icons and text */
+}
+
+/* Social Media Links */
+.footer-social a {
+  margin-right: 15px; /* Space between icons */
+  font-size: 1.5em; /* Font size for social media icons */
+  color: white; /* White icon color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-social a:hover {
+  color: #FFD700; /* Change color on hover */
+}
+
+/* Footer Bottom (Copyright) */
+.footer-bottom {
+  text-align: center; /* Center-align the copyright */
+  margin-top: 20px; /* Space above the copyright */
+  font-size: 0.9em; /* Font size for copyright */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove margin for copyright text */
+}
+/* For Large Screens (Laptop/Desktops) */
+@media (min-width: 1024px) {
+  .container {
+      width: 80%; /* Set a maximum width */
+      margin: 0 auto;
+  }
+}
+
+/* For Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+      width: 90%; /* Slightly smaller width for tablets */
+      margin: 0 auto;
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 767px) {
+  .container {
+      width: 100%; /* Full width for mobile */
+      padding: 10px;
+  }
+
+  footer {
+      text-align: center; /* Center-align footer text on mobile */
+  }
+
+  .footer-container {
+      flex-direction: column; /* Stack footer content vertically */
+  }
+
+  .footer-contact, .footer-social {
+      width: 100%; /* Full width for mobile */
+      margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .footer-social a {
+      font-size: 1.2em; /* Smaller social media icons for mobile */
+  }
+}
